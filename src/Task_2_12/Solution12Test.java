@@ -1,4 +1,4 @@
-package JavaCore.Module7.Task_7_2_12;
+package Task_2_12;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -12,7 +12,7 @@ import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+class Solution12Test {
 
     protected static ByteArrayOutputStream output;
     private static PrintStream oldOut;
@@ -39,14 +39,14 @@ class SolutionTest {
     @Test
     void test1() {
         System.setIn(new ByteArrayInputStream("Мама мыла-мыла-мыла раму!".getBytes()));
-        Solution.main(new String[]{});
+        Solution12.main(new String[]{});
         assertEquals("мыла\nмама\nраму\n", output.toString());
     }
 
     @Test
     void test2() {
         System.setIn(new ByteArrayInputStream("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales consectetur purus at faucibus. Donec mi quam, tempor vel ipsum non, faucibus suscipit massa. Morbi lacinia velit blandit tincidunt efficitur. Vestibulum eget metus imperdiet sapien laoreet faucibus. Nunc eget vehicula mauris, ac auctor lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel odio nec mi tempor dignissim.".getBytes()));
-        Solution.main(new String[]{});
+        Solution12.main(new String[]{});
         assertEquals("consectetur\nfaucibus\nipsum\nlorem\nadipiscing\namet\ndolor\neget\nelit\nmi\n", output.toString());
     }
 }
