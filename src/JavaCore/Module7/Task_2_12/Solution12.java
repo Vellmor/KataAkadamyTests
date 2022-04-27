@@ -1,4 +1,4 @@
-package Task_2_12;
+package JavaCore.Module7.Task_2_12;
 
 import java.io.BufferedReader;
 import java.io.IOException;
